@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: crytic/slither-action@v0.2.0
       with:
-        target: 'examples'
+        target: 'examples/'
         slither-args: '--solc-remaps "@openzeppelin/contracts=./node_modules/@openzeppelin/contracts hardhat=./node_modules/hardhat"'
         fail-on: 'low'
         solc-version: '0.8.2'
